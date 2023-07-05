@@ -1,0 +1,391 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body{
+    background-color: hsl(214, 47%, 23%);
+}
+.name{
+    width: 550px;
+    padding: 15px 25px 25px;
+    height: 85px;
+    margin-top: 3%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+
+    
+    border-style:solid;
+    border-width: 3px ;
+    border-color: hsl(217, 16%, 45%);
+    border-top-left-radius: 2.5% 10% ;
+    border-top-right-radius: 2.5% 10% ;
+    border-bottom-left-radius: 2.5% 10%  ;
+    border-bottom-right-radius: 2.5% 10%  ;
+}
+
+.name h1{
+    color: white;
+    font-size: 2rem;
+    line-height: 27px;
+}
+.name .score{
+    float: right;
+    width: 120px;
+    height: 95px;
+    text-align: center;
+    font-size: 0.6rem;
+    color: hsl(229, 64%, 46%);
+    background-color: white;
+
+    letter-spacing: 3px;
+
+    
+    border-radius: 10%;
+}
+.name .score h3{
+    font-size: 3.5rem;
+    color: hsl(229, 25%, 31%);
+}
+
+/* images icons */
+.images{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    width: 400px;
+    height: 400px;
+}
+.images .triangle{
+    position: absolute;
+    top: 75px;
+    left: 85px;
+    z-index: -1;
+    
+}
+.icons{
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+
+    border-style: solid;
+    border-width: 20px;
+    border-bottom-width: 12.5px;
+}
+.icons svg{
+    margin-top: 25px;
+}
+
+.i1{
+    margin: 15px 0 0 15px;
+    border-color: hsl(230, 89%, 65%);
+    box-shadow: 0px 7.5px 1px hsl(230, 65%, 50%)
+                ,inset 0 5px 1px hsl(220, 6%, 80%);
+}
+.i2{
+    float: right;
+    margin: 15px 15px 0 0;
+    border-color: hsl(39, 89%, 53%) ;
+    box-shadow: 0px 7.5px 1px hsl(39, 65%, 40%)
+                ,inset 0 5px 1px hsl(220, 6%, 80%);
+}
+.i3{
+    margin:15px 0 0 125px;
+    border-color:hsl(349, 71%, 56%) ;
+    box-shadow: 0px 7.5px 1px hsl(349, 55%, 45%)
+                ,inset 0 5px 1px hsl(220, 6%, 80%);
+}
+
+.choosenimage{
+    width:400px;
+    position: absolute;
+    left: 50%;
+    top: 37%;
+    transform: translate(-50%);
+}
+.choosenimage h1{
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+.choosenimage .icons{
+    margin-left: 25px;
+}
+
+.choosenimage .you{
+    position: relative;
+    float: left;
+    margin: 0;
+}
+
+.choosenimage .house{
+    position: relative;
+    float: right;
+}
+.choosenimage .delay{
+    margin: 60px 0 0 20px;
+    background-color: hsl(214, 47%, 15%) ;
+    border-style: none;
+}
+
+.j0{
+    margin: 0;
+    border-color: hsl(230, 89%, 65%);
+    box-shadow: 0px 7.5px 1px hsl(230, 65%, 50%)
+                ,inset 0 5px 1px hsl(220, 6%, 80%);
+}
+
+.j1{
+    margin:  0;
+    border-color: hsl(39, 89%, 53%) ;
+    box-shadow: 0px 7.5px 1px hsl(39, 65%, 40%)
+                ,inset 0 5px 1px hsl(220, 6%, 80%);
+}
+
+.j2{
+    border-color:hsl(349, 71%, 56%) ;
+    box-shadow: 0px 7.5px 1px hsl(349, 55%, 45%)
+                ,inset 0 5px 1px hsl(220, 6%, 80%);
+}
+
+.winningborder2{
+    box-shadow: 0px 7.5px 1px hsl(349, 55%, 45%),
+                0 0 0 40px hsl(214, 47%, 29%), 
+                0 0 0 80px hsl(214, 47%, 27%), 
+                0 0 0 120px hsl(214, 47%, 25%)
+                ,inset 0 5px 1px hsl(220, 6%, 80%);
+}
+.winningborder1{
+    box-shadow: 0px 7.5px 1px hsl(230, 65%, 50%),
+                0 0 0 40px hsl(214, 47%, 29%), 
+                0 0 0 80px hsl(214, 47%, 27%), 
+                0 0 0 120px hsl(214, 47%, 25%)
+                
+                ,inset 0 5px 1px hsl(220, 6%, 80%);
+}
+.winningborder0{
+    box-shadow: 0px 7.5px 1px hsl(39, 65%, 40%),
+                0 0 0 40px hsl(214, 47%, 29%), 
+                0 0 0 80px hsl(214, 47%, 27%), 
+                0 0 0 120px hsl(214, 47%, 25%)
+                ,inset 0 5px 1px hsl(220, 6%, 80%);
+}
+
+
+.winlose{
+    display: none;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    bottom: -70%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.winlose h1{
+    font-size: 2.5rem;
+    letter-spacing: 0px;
+    margin-bottom: 15px;
+}
+.winlose button{
+    height: 40px;
+    width: 170px;
+    font-size: 0.8.5rem;
+    border: none;
+    border-top-left-radius: 2.5% 10% ;
+    border-top-right-radius: 2.5% 10% ;
+    border-bottom-left-radius: 2.5% 10%  ;
+    border-bottom-right-radius: 2.5% 10%  ;
+
+    letter-spacing: 2px;
+    color: hsl(229, 25%, 31%);
+}
+.winlose button:hover{
+    font-weight: 800;
+    color:hsl(349, 71%, 52%);
+}
+
+/* Rules button */
+
+.showrules{
+    display: none;
+    width: 340px;
+    height: 380px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    border-radius: 3%;
+    background-color: white;
+    transition: .4s;
+}
+.showrules h1{
+    color: hsl(229, 25%, 31%);
+    padding: 20px 0 0  15px;
+}
+.showrules button{
+    float: right;
+    border: none;
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    color: hsl(220, 6%, 80%);
+    font-size: 2rem;
+    margin: 20px 15px 0 0;
+}
+
+.showrules svg{
+    margin: 30px 0 0 20px;
+}
+
+
+.rules{
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+.rules button{
+    width: 110px;
+    height: 35px;
+
+    letter-spacing: 3px;
+    color: white;
+    border-color: white;
+    background-color: transparent;
+
+    border-width: 1px;
+    border-top-left-radius: 8% 25% ;
+    border-top-right-radius: 8% 25% ;
+    border-bottom-left-radius: 8% 25% ;
+    border-bottom-right-radius: 8% 25%;
+}
+
+@media only screen and (max-width: 600px) {
+    .name{
+        width: 330px;
+        height: 65px;
+        padding: 5px 10px 20px;
+    }
+    .name h1{
+        font-size: 1.4rem;
+        line-height: 21px;
+    }
+    .name .score{
+        height: 80px;
+        width: 100px;
+        font-size: 0.55rem;
+    }
+    .name .score h3{
+        font-size: 2rem;
+    }
+
+    .images{
+        transform: translate(-50%,-40%);
+        width: 350px;
+        height: 350px;
+    }
+
+    .images .triangle{
+        left: 16%;
+    }
+
+    .icons{
+        width: 90px;
+        height: 90px;
+    }
+
+    .icons svg{
+        margin-top: 15px;
+    }
+
+    .i3{
+        margin:15px 0 0 105px;
+    }
+
+    .choosenimage{
+        width: 300px;
+        height: 300px;
+        left: 50%;
+        top: 30%;
+    }
+    .choosenimage .icons{
+        padding: 0;
+        margin: 1px 0 60px 0;
+    }
+    .choosenimage h1{
+        position: absolute;
+        bottom: -10px;
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
+    .choosenimage .you h1 {
+        margin-left: 20px;
+    }
+    .winlose{
+        bottom: 0%;
+        margin: 0;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .winlose h1{
+        bottom: 25%;
+        margin: 30px 0 25px 15px;
+        font-size: 2.5rem;
+
+    }
+    .winlose button{
+        margin: 50px 0 0 0 ;
+    }
+
+
+    .showrules{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        transition: .4s;
+    }
+    .showrules h1{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .showrules button{
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+        transform: translate(-50%);
+    }
+
+    .showrules svg{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-55%,-65%);
+    }
+
+    .rules{
+        right: 50%;
+        bottom: 5%;
+        transform: translate(50%);
+    }
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
